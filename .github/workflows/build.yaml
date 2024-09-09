@@ -2,8 +2,6 @@ name: Continuous Integration
 
 on:
   push:
-    tags-ignore:
-      - 'v*'
 
 env:
   CARGO_TERM_COLOR: always
