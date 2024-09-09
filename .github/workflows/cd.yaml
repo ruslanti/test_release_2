@@ -1,4 +1,4 @@
-name: Release
+name: Release-plz
 
 permissions:
   pull-requests: write
@@ -9,27 +9,18 @@ on:
     branches:
       - main
 
-env:
-  CARGO_TERM_COLOR: always
-  RUSTFLAGS: "-Dwarnings"
-
 jobs:
-  release:
+  release-plz:
+    name: Release-plz
     runs-on: ubuntu-latest
     steps:
-      - name: Clone repo
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: recursive
-
-      - name: Setup Rust
+      - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
-        with:
-          target: wasm32-wasi
-          components: rustfmt, clippy
-
-      - name: Run Release PR
+      - name: Run release-plz
         uses: MarcoIeni/release-plz-action@v0.5
         with:
           command: release-pr
