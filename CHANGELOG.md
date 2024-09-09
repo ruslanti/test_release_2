@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.4-rc.5] - 2024-09-09
+
+### 🐛 Bug Fixes
+
+- Changelog generation from cargo release
+
 ## [0.2.4-rc.4] - 2024-09-09
 
 ### 🚀 Features
 
 - Adding changelog
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.4-rc.4
 
 ## [0.2.4-rc.3] - 2024-09-09
 
