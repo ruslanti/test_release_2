@@ -35,7 +35,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
-        run: cargo build --release --all-features
+        run: cargo build --all-features
 
       - name: Documentation
         run: cargo doc
