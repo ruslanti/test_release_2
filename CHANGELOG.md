@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.5-rc.3] - 2024-09-09
+
+### 🐛 Bug Fixes
+
+- Build CI3
+- Build CI3
+
 ## [0.2.5-rc.2] - 2024-09-09
 
 ### 🐛 Bug Fixes
@@ -12,6 +19,10 @@ All notable changes to this project will be documented in this file.
 - Build CI3
 - Build CI3
 - Build CI3
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.5-rc.2
 
 ## [0.2.5-rc.1] - 2024-09-09
 
