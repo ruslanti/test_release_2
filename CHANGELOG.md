@@ -2,11 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.4-rc.7] - 2024-09-09
+
+### 🐛 Bug Fixes
+
+- Build CI
+- Build CI
+- Build CI
+- Build CI2
+
 ## [0.2.4-rc.6] - 2024-09-09
 
 ### 🐛 Bug Fixes
 
 - Build CI
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.4-rc.6
 
 ## [0.2.4-rc.5] - 2024-09-09
 
