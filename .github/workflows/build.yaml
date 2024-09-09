@@ -1,8 +1,9 @@
 name: Continuous Integration
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    branches:
+      - '!main'
 
 env:
   CARGO_TERM_COLOR: always
