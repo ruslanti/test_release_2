@@ -32,7 +32,4 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
 
       - name: Create release
-        id: create_release
-
-      - name: Release
         uses: softprops/action-gh-release@v2
