@@ -4,8 +4,9 @@ permissions:
   contents: write
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    tags:
+      - 'v*'
 
 env:
   CARGO_TERM_COLOR: always
