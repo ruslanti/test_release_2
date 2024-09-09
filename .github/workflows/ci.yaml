@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - !main
+      - main
 env:
   CARGO_TERM_COLOR: always
   RUSTFLAGS: "-Dwarnings"
