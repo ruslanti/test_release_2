@@ -1,7 +1,9 @@
 name: Continuous Integration
 
 on:
-  push
+  push:
+    tags-ignore:
+      - 'v*'
 
 env:
   CARGO_TERM_COLOR: always
@@ -13,7 +15,6 @@ permissions:
 
 jobs:
   build:
-    if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
