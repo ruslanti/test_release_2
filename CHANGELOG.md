@@ -18,6 +18,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Other
 
+- release
+- Merge pull request [#7](https://github.com/ruslanti/test_release_2/pull/7) from ruslanti/feat/new_release_1
+- Initial commit
+
+## [0.1.0](https://github.com/ruslanti/test_release_2/releases/tag/v0.1.0) - 2024-09-09
+
+### Added
+
+- 3 attempt of release
+- second attempt of release
+- first release
+- first version
+
+### Other
+
 - Merge pull request [#7](https://github.com/ruslanti/test_release_2/pull/7) from ruslanti/feat/new_release_1
 - Initial commit
 
