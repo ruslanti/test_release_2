@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.4-rc.6] - 2024-09-09
+
+### 🐛 Bug Fixes
+
+- Build CI
+
 ## [0.2.4-rc.5] - 2024-09-09
 
 ### 🐛 Bug Fixes
 
 - Changelog generation from cargo release
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.4-rc.5
 
 ## [0.2.4-rc.4] - 2024-09-09
 
