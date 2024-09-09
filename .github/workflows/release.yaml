@@ -22,7 +22,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Generate a changelog
+        uses: orhun/git-cliff-action@v3
+        with:
+          config: cliff.toml
+          args: --latest
+        env:
+          OUTPUT: CLIFF.md
+          GITHUB_REPO: ${{ github.repository }}
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          body_path: CHANGELOG.md
+          body_path: CLIFF.md
