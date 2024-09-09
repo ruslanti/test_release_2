@@ -18,6 +18,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - release
 - release
+- release
+- Initial commit
+
+## [0.1.0](https://github.com/ruslanti/test_release_2/releases/tag/v0.1.0) - 2024-09-09
+
+### Added
+
+- first release
+- first version
+
+### Other
+
+- release
+- release
 - Initial commit
 
 ## [0.1.0](https://github.com/ruslanti/test_release_2/releases/tag/v0.1.0) - 2024-09-09
