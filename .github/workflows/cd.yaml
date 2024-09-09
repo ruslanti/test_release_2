@@ -31,7 +31,5 @@ jobs:
 
       - name: Run Release PR
         uses: MarcoIeni/release-plz-action@v0.5
-        with:
-          command: release-pr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
