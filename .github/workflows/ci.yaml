@@ -1,7 +1,9 @@
 name: Continuous Integration
 
-on: [push]
-
+on:
+  push:
+    branches-ignore:
+      - main
 env:
   CARGO_TERM_COLOR: always
   RUSTFLAGS: "-Dwarnings"
@@ -39,27 +41,3 @@ jobs:
 
       - name: Run Clippy
         run: cargo clippy --all-targets --all-features
-
-  release:
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    needs: build
-    steps:
-      - name: Clone repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          submodules: recursive
-
-      - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          target: wasm32-wasi
-          components: rustfmt, clippy
-
-      - name: Run Release PR
-        uses: MarcoIeni/release-plz-action@v0.5
-        with:
-          command: release-pr
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
