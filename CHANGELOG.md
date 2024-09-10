@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - Change release pipeline
 - Changing cargo release settings
 
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.5
+
 ## [0.2.5-rc.5] - 2024-09-09
 
 ### 🐛 Bug Fixes
