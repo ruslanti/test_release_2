@@ -2,11 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.5] - 2024-09-10
+
+### 🐛 Bug Fixes
+
+- Change release pipeline
+- Changing cargo release settings
+
 ## [0.2.5-rc.5] - 2024-09-09
 
 ### 🐛 Bug Fixes
 
 - Build CI3
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.5-rc.5
 
 ## [0.2.5-rc.4] - 2024-09-09
 
