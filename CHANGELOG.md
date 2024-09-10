@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.7-rc.1] - 2024-09-10
+
+### 🐛 Bug Fixes
+
+- Build CI3
+
+## [0.2.6] - 2024-09-10
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.6
+
 ## [0.2.5] - 2024-09-10
 
 ### 🐛 Bug Fixes
