@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.8-rc.2] - 2024-09-11
+
+### 🐛 Bug Fixes
+
+- Aprove PR
+
+## [0.2.8-rc.1] - 2024-09-11
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.8-rc.1
+
 ## [0.2.7] - 2024-09-11
 
 ### 🐛 Bug Fixes
