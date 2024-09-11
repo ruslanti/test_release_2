@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  masterPromotion:
+  create_release_pr:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repo
@@ -20,4 +20,4 @@ jobs:
       - name: Create GitHub PR for release branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr create --base main --fill
+        run: gh pr create --base main --title ${{ github.ref_name }}
