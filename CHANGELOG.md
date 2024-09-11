@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Build CI3
 
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.7-rc.1
+
 ## [0.2.6] - 2024-09-10
 
 ### ⚙️ Miscellaneous Tasks
