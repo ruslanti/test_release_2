@@ -17,8 +17,7 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          base: ${{ github.ref_name }}
-          branch: main
+      - name: Create GitHub PR for release branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr create --base main --fill
