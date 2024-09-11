@@ -7,8 +7,8 @@ on:
   pull_request:
     types:
       - closed
-    branches:
-      - 'releases/**'
+    paths:
+      - 'CHANGELOG.md'
 
 jobs:
   if_merged:
