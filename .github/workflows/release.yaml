@@ -78,7 +78,7 @@ jobs:
 
           if [ "${{ matrix.os }}" = "windows-latest" ]; then
             7z a "$dirname.zip" "$dirname"
-            shasum -a 256 "$dirname.tar.gz" > "$dirname.tar.gz.sha256"
+            certutil -hashfile "$dirname.zip" SHA256 > "$dirname.zip.sha256"
             echo "ASSET=$dirname.zip" >> $GITHUB_ENV
             echo "ASSET_SUM=$dirname.tar.gz.sha256" >> $GITHUB_ENV
           else
