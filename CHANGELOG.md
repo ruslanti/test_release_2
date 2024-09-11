@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.9-alpha.1] - 2024-09-11
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.9-alpha.1
+
 ## [0.2.8] - 2024-09-11
 
 ### 🐛 Bug Fixes
