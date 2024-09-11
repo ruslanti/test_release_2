@@ -2,11 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.8-rc.4] - 2024-09-11
+
+### 🐛 Bug Fixes
+
+- Aprove PR branch name
+
 ## [0.2.8-rc.3] - 2024-09-11
 
 ### 🐛 Bug Fixes
 
 - Aprove PR branch name
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.8-rc.3
 
 ## [0.2.8-rc.2] - 2024-09-11
 
