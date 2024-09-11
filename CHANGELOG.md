@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.7-rc.7] - 2024-09-11
+
+### 🐛 Bug Fixes
+
+- Cargo install
+
 ## [0.2.7-rc.6] - 2024-09-11
 
 ### 🚀 Features
@@ -15,6 +21,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - Release test_release_2 version 0.2.7-rc.5
+- Release test_release_2 version 0.2.7-rc.6
 
 ## [0.2.7-rc.4] - 2024-09-11
 
