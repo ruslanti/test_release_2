@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 
 - Release test_release_2 version 0.2.9-alpha.1
 - Release test_release_2 version 0.2.9-alpha.2
+- Release test_release_2 version 0.2.9-beta.1
 
 ## [0.2.8] - 2024-09-11
 
