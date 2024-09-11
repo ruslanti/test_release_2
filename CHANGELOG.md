@@ -2,11 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.7-rc.3] - 2024-09-11
+## [0.2.7-rc.4] - 2024-09-11
 
 ### ⚙️ Miscellaneous Tasks
 
 - Release test_release_2 version 0.2.7-rc.2
+- Release test_release_2 version 0.2.7-rc.3
 
 ## [0.2.7-rc.1] - 2024-09-10
 
