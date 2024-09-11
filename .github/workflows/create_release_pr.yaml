@@ -1,4 +1,4 @@
-name: Create master promotion pull request
+name: Create release pull request
 on:
   push:
     branches:
@@ -20,4 +20,4 @@ jobs:
       - name: Create GitHub PR for release branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr create --base main --title ${{ github.ref_name }}
+        run: gh pr create --base main --title ${{ github.ref_name }} --body ${{ github.ref_name }}
