@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - Aprove PR branch name2
 - Aprove PR branch name2
 
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.8
+
 ## [0.2.8-rc.5] - 2024-09-11
 
 ### 🐛 Bug Fixes
