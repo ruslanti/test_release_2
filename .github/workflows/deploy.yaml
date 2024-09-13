@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT
-        echo "VERSION=`echo ${{ env.inputs.stages }} | sed -n s\~/-/g -e s/^v//`" >> "$GITHUB_ENV"
+        echo "VERSION=`echo ${{ env.inputs.stages }} | sed \"s/~/-/g\" | sed \"s/v//g\"`" >> "$GITHUB_ENV"
         run: echo  The tags are ${{ inputs.stage }} - ${{ inputs.version }}
