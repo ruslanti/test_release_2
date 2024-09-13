@@ -2,12 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.11-rc.9] - 2024-09-13
+
+### 🐛 Bug Fixes
+
+- Pipeline
+
 ## [0.2.11-rc.8] - 2024-09-13
 
 ### 🐛 Bug Fixes
 
 - Pipeline
 - Pipeline
+
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.11-rc.8
 
 ## [0.2.11-rc.7] - 2024-09-13
 
