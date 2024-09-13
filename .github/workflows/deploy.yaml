@@ -1,0 +1,28 @@
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: 'Release version'
+        required: true
+        type: string
+      stage:
+        description: 'Release version'
+        required: true
+        type: choice
+        options:
+          - gcdn_gc_preprod_edges_stage1
+          - gcdn_gc_preprod_edges_stage2
+          - gcdn_gc_preprod_edges_stage99
+          - gcdn_gc_prod_edges_stage1
+          - gcdn_gc_prod_edges_stage2
+          - gcdn_gc_prod_edges_stage3
+          - gcdn_gc_prod_edges_stage4
+          - gcdn_gc_prod_edges_stage5
+          - gcdn_gc_prod_edges_stage99
+
+  jobs:
+    print-tag:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print the input tag to STDOUT
+          run: echo  The tags are ${{ inputs.stage }} - ${{ github.ref }}
