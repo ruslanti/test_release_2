@@ -16,5 +16,5 @@ jobs:
     steps:
       - name: Print the input tag to STDOUT
         run: |
-          echo "VERSION=`echo ${{ env.inputs.stages }} | sed s/~/-/g | sed s/v//g`" >> "$GITHUB_ENV"
+          echo "VERSION=`echo ${{ inputs.version }} | sed s/~/-/g | sed s/v//g`" >> "$GITHUB_ENV"
           echo  The tags are ${{ inputs.stage }} - ${{ inputs.version }}
