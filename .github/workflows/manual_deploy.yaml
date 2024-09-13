@@ -3,6 +3,8 @@ name: Stage deploy
 on:
   workflow_dispatch:
     inputs:
+      version:
+        required: true
       stage:
         description: 'Stage'
         required: true
