@@ -20,5 +20,6 @@ jobs:
           echo ${{ inputs.version }} | sed s/~/-/g | sed s/v//g
           echo "version=`echo ${{ inputs.version }} | sed s/~/-/g | sed s/v//g`" 
           echo "version=`echo ${{ inputs.version }} | sed s/~/-/g | sed s/v//g`" >> $GITHUB_OUTPUT
-      - name: Echo Version    
+      - name: Echo Version
+        run: |
           echo  The tags are ${{ inputs.stage }} - ${{ steps.get-version.outputs.version }}
