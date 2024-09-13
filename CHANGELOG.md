@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file.
 - Add manual deploy workflow
 - Add manual deploy workflow
 
+### ⚙️ Miscellaneous Tasks
+
+- Release test_release_2 version 0.2.10-rc.3
+
 ## [0.2.10-rc.2] - 2024-09-13
 
 ### 🐛 Bug Fixes
