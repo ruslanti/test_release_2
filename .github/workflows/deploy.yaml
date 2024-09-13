@@ -1,5 +1,3 @@
-name: Stage deployment
-
 on:
   workflow_call:
     inputs:
