@@ -1,3 +1,5 @@
+name: Stage deployment
+
 on:
   workflow_call:
     inputs:
@@ -20,9 +22,9 @@ on:
           - gcdn_gc_prod_edges_stage5
           - gcdn_gc_prod_edges_stage99
 
-  jobs:
-    print-tag:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Print the input tag to STDOUT
-          run: echo  The tags are ${{ inputs.stage }} - ${{ github.ref }}
+jobs:
+  print-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the input tag to STDOUT
+        run: echo  The tags are ${{ inputs.stage }} - ${{ github.ref }}
