@@ -1,0 +1,30 @@
+name: Stage deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version'
+        required: true
+        type: string
+      stage:
+        description: 'Stage'
+        required: true
+        type: choice
+        options:
+          - gcdn_gc_preprod_edges_stage1
+          - gcdn_gc_preprod_edges_stage2
+          - gcdn_gc_preprod_edges_stage99
+          - gcdn_gc_prod_edges_stage1
+          - gcdn_gc_prod_edges_stage2
+          - gcdn_gc_prod_edges_stage3
+          - gcdn_gc_prod_edges_stage4
+          - gcdn_gc_prod_edges_stage5
+          - gcdn_gc_prod_edges_stage99
+
+jobs:
+  call-deploy-workflow:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      version: ${{ github.ref_name }}
+      stage: ${{ input.stage }}
