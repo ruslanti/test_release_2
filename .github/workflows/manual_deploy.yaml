@@ -19,7 +19,15 @@ on:
           - gcdn_gc_prod_edges_stage99
 
 jobs:
+  build_deb:
+    steps:
+      - name: Print the input tag to STDOUT
+        run: echo  The tags are ${{ inputs.stage }} - ${{ inputs.version }}
+
   call-deploy-workflow:
+    needs: build_deb
+    env:
+      VERSION: ${{ needs.build_deb.outputs.version }}
     uses: ./.github/workflows/deploy.yaml
     with:
       version: ${{ github.ref_name }}

@@ -91,3 +91,10 @@ jobs:
           files: |
             ${{ env.ASSET }}
             ${{ env.ASSET_SUM }}
+
+  call-deploy-workflow:
+    needs: build-release
+    uses: ./.github/workflows/deploy.yaml
+    with:
+      version: ${{ github.ref_name }}
+      stage: 'stage1'
