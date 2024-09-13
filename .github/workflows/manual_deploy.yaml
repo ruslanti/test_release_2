@@ -20,7 +20,7 @@ on:
 
 jobs:
   call-deploy-workflow:
-    uses: .github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml
     with:
       version: ${{ github.ref_name }}
       stage: ${{ input.stage }}
